@@ -11,16 +11,29 @@
     <form action="">
         <label for="nombre">
             <span>Cual es tu nombre?</span> 
-            <input type="text" id="name" placeholder="tu nombre"  />
-        </label>
+            <input type="text" name="nombre" id="name" placeholder="tu nombre"  autocomplete="name" required/>
+        </label> <br/>
+        <label for="correo">
+            <span>Cual es tu correo?</span> 
+            <input type="email" name="correo" id="correo" placeholder="tu correo" autocomplete="email" required />
+        </label> <br/>
+        <label for="pais">
+            <span>Cual es tu pais?</span> 
+            <input type="text" name="pais" id="name" placeholder="tu pais" autocomplete="country" required/>
+        </label> <br/>
+        <label for="direccion">
+            <span>Cual es tu direccion?</span> 
+            <input type="text" name="direccion" id="direccion" placeholder="tu direccio" autocomplete="address" required/>
+        </label> <br/>
         <label for="inicio-platzi">
             <span>Que dia iniciaste en platzi?</span> 
-            <input type="date" id="inicio-platzi" />
-        </label>
+            <input type="date" id="inicio-platzi" required/>
+        </label> <br/>
         <label for="horario">
             <span>En que horario estudias?</span> 
-            <input type="time" id="horario" placeholder="nombre" />
+            <input type="time" id="horario" placeholder="nombre"  required/>
         </label>
+        <input type="submit">
     </form>
 </body>
 </html>
