@@ -33,7 +33,35 @@
             <span>En que horario estudias?</span> 
             <input type="time" id="horario" placeholder="nombre"  required/>
         </label>
+        <br><br>
+        <!-- esta es la manera de realzar un select multiple -->
+        <main>
+            <span>Que curso estas realizando?</span>
+            <select name="cursos" id="" required>
+                <option value="javascript">JavaScript</option>
+                <option value="html5">Html5</option>
+                <option value="css3">Css3</option>
+                <option value="database">DataBase</option>
+                <option value="azure">Azure</option>
+            </select>
+            
+            <br><br>
+              <!-- esta es la manera ideal de realizar un select multiple con busqueda ademas puede capturar la info -->
+            <span>Que Ruta de aprendizaje te interesa?</span>
+            <input list="rutas">
+            <datalist id="rutas">
+                <option value="Desarrollo Web"></option>
+                <option value="FrontEnd"></option>
+                <option value="BackEnd"></option>
+                <option value="DevOps"></option>
+                <option value="Analista Datos"></option>
+            </datalist>
+        </main>
         <input type="submit">
     </form>
 </body>
 </html>
+
+<option value=""></option>
+<option value=""></option>
+<option value=""></option>
