@@ -57,4 +57,39 @@ las etiquetas las mandamos a llamar  en nuestro archivo .css de tres maneras o s
 ## *Pseudoclases y Pseudoelementos*
 Una [**pseudoclase**](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes) CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario en conclucion, esta define el estilo de un estado espacial de un elemento
 
+Html
+     <header>
+            <nav>
+                <ul class="main-nav">
+                    <li class="main-nav__item"><a href="">Home</a></li>
+                    <li class="main-nav__item"><a href="">Cursos</a></li>
+                    <li class="main-nav__item"><a href="">Instructores</a></li>
+                    <li class="main-nav__item"><a href="">Blog</a></li>
+                </ul>
+            </nav>
+    </header> 
+Css
+    .main-nav {
+        margin-top: 10px;
+        list-style: none;
+        padding: 0;
+        background-color: rgb(130, 70, 186);    
+    }
+
+        .main-nav__item {
+            display: inline-block;
+        }
+
+        .main-nav__item a {
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .main-nav__item a:hover {
+            color:rgb(52, 199, 225);
+        }
+
+   
+
 [**los pseudoelementos**](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements)  permiten añadir estilos a una parte concreta del documento. Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.define el estilo de un parte especifica de un elemento
