@@ -54,21 +54,32 @@ las etiquetas las mandamos a llamar  en nuestro archivo .css de tres maneras o s
         font-size: 20px;
     }
 
+## *Anatomia de una regla de CSS*
+a los estilos que se implementan se le llaman reglas css se componen de 
+1. Selector: es decirle a css que elemento quieres modificar
+2. Propiedad: es el estilo que se le va a aplicar al selector
+3. El valor de la propiedad: es lo que se espera que se vaya a aplicar y finalizamos con punto y coma
+    p {
+        color: red;
+    }
+
 ## *Pseudoclases y Pseudoelementos*
-Una [**pseudoclase**](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes) CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario en conclucion, esta define el estilo de un estado espacial de un elemento
+Una [**pseudoclase**](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes) CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo, a:hover aplicará un estilo cuando el usuario en conclucion, esta define el estilo de un estado espacial de un elemento
 
 Html
+
      <header>
-            <nav>
-                <ul class="main-nav">
-                    <li class="main-nav__item"><a href="">Home</a></li>
-                    <li class="main-nav__item"><a href="">Cursos</a></li>
-                    <li class="main-nav__item"><a href="">Instructores</a></li>
-                    <li class="main-nav__item"><a href="">Blog</a></li>
-                </ul>
-            </nav>
+        <nav>
+         <ul class="main-nav">
+           <li class="main-nav__item"><a href="">Home</a></li>
+           <li class="main-nav__item"><a href="">Cursos</a></li>
+           <li class="main-nav__item"><a href="">Instructores</a></li>
+           <li class="main-nav__item"><a href="">Blog</a></li>
+         </ul>
+        </nav>
     </header> 
 Css
+    
     .main-nav {
         margin-top: 10px;
         list-style: none;
@@ -76,20 +87,31 @@ Css
         background-color: rgb(130, 70, 186);    
     }
 
-        .main-nav__item {
-            display: inline-block;
-        }
+    .main-nav__item {
+        display: inline-block;
+    }
 
-        .main-nav__item a {
-            color: white;
-            padding: 5px;
-            text-decoration: none;
-        }
+    .main-nav__item a {
+        color: white;
+        padding: 5px;
+        text-decoration: none;
+    }
 
-        .main-nav__item a:hover {
-            color:rgb(52, 199, 225);
-        }
+    .main-nav__item a:hover {
+        color:rgb(52, 199, 225);
+    }
 
+[**los pseudoelementos**](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements)  permiten añadir estilos a una parte concreta del documento. Por ejemplo, el pseudoelemento a::after selecciona solo la primera línea del elemento especificado por el selector.define el estilo de un parte especifica de un elemento
+
+    .main-nav__item a::after {
+        content: " | ";
+    }
+
+## *Modelo de caja*
+son contenedores que pueden llevar contenido y pueden llevar ciertos estilos y tiene las sigientes propiedades
+1. margin. puede ser un espacio externo de la caja hacia afuera
+2. border. es la linea qu va a definir cada uno de los elementos por defaul viene transparente y se le puede poner un color y un ancho
+3. padding. es un espacio interno de lacaja hacia adentro y ayuda para posisionar el contenido
+4. content. puede ser el texto las imagenes o el video
    
-
-[**los pseudoelementos**](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements)  permiten añadir estilos a una parte concreta del documento. Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.define el estilo de un parte especifica de un elemento
+tenemos unas clases las cuales son width que equivale al largo del contenido, el heigth es el alto ademas se puede pósisionar con top (arriba), bottom(abajo), left(ala izquierda), right(a la derecha)
