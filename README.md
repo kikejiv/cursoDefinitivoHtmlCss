@@ -115,3 +115,6 @@ son contenedores que pueden llevar contenido y pueden llevar ciertos estilos y t
 4. content. puede ser el texto las imagenes o el video
    
 tenemos unas clases las cuales son width que equivale al largo del contenido, el heigth es el alto ademas se puede pósisionar con top (arriba), bottom(abajo), left(ala izquierda), right(a la derecha)
+
+## *Herencia*
+es el codigo css que se le pasa de un padre a un hijo
