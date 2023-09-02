@@ -117,4 +117,18 @@ son contenedores que pueden llevar contenido y pueden llevar ciertos estilos y t
 tenemos unas clases las cuales son width que equivale al largo del contenido, el heigth es el alto ademas se puede pósisionar con top (arriba), bottom(abajo), left(ala izquierda), right(a la derecha)
 
 ## *Herencia*
-es el codigo css que se le pasa de un padre a un hijo
+es el codigo css que se le pasa de un padre a un hijo, cuando toma los estilos de otra etiqueta
+
+**Herencia y sus valores:**
+1. Inherit. Este es un valor por medio de una keyword que especifica que, a la propiedad que se la apliquemos debe de heredar los valores de su elemento padre. Podemos decir que la palabra Inherit significa “Usa el valor de mi padre”, si el elemento padre no tiene definido dicho valor el navegador seguirá el DOM hasta que encuentre un elemento superior que lo contenga, y en ultima instancia de no tenerlo ningún elemento superior se aplicara el valor por defecto.
+
+2. Initial. Este valor pertenece a la especificación CSS3 y cuando aplicamos a una propiedad el valor initial estamos dando el valor inicial y predefinido por el navegador en cuestión.
+
+3. Upset. Este valor unset es una combinación entre inherit y initial, cuando utilizamos este valor en una propiedad esta tratara de heredar el valor de su elemento padre si este esta disponible, de no ser así este valor colocará el valor de la propiedad en su valor inicial, como si usáramos inherit e initial juntos.
+
+## Como controla el orden al declarar CSS
+1. Importancia: es uno de los conceptos  mas importantes si dos declaraciones tiene la mis ma importancia, la especificidad decidira cual regla se le debe aplicar cuando se carga un proyecto primero se  implementan los estilos por defecto del navegador, luego se cargan los estilo que nosotros trabajamos y por ultiom se cargaran los estilos que contengan un important en nuestra hoja de estilo
+
+2. Especificidad: !important es el mas importante y se aplicaran de primero, inline styles son los estilos que se enbeben en las etiquetas html, despues entran los estilos que se apliquen a los id(#), luego a las clases(.)y por ultimo a los selectores como etiquetas html
+
+3. Orden en las fuentes. es la forma en la que se mandan a llamar los estilos  siempre se enpezara de la primera linea hasta abajo
