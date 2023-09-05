@@ -187,7 +187,7 @@ permiten crear combinaciones multiples de selectores y crear una payor specifici
     estilizara solo la tercera y cuarta etiquetas p debido a que son hijas directas del div
 4. descendiente: todas las etiquetas que eten dentro de un contenedor (div p { }) ej
     ``` 
-        div > p {
+        div p {
             color: blue
         }
         <div>
@@ -204,4 +204,4 @@ permiten crear combinaciones multiples de selectores y crear una payor specifici
             </section>  
             <p>soy un parrafo</p>    
         </div>
-     estilizara todas las etiquetas p debido a que son hijos de la etiqueta div
+     estilizara todas las etiquetas p debido a que son hijos de la etiqueta global div

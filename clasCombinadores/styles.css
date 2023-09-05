@@ -1,0 +1,19 @@
+/* combinadores  hermano adyacente o cercanos: */
+h2 + p{
+    color: red;
+}
+
+/* combinadores hermanno general */
+
+h3 ~ p {
+    color: yellow;
+}
+
+/* combinadores hijos */
+div > p {
+    color: green;
+}
+
+footer p {
+    color: blue
+}
