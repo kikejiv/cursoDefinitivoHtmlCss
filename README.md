@@ -132,3 +132,76 @@ es el codigo css que se le pasa de un padre a un hijo, cuando toma los estilos d
 2. Especificidad: !important es el mas importante y se aplicaran de primero, inline styles son los estilos que se enbeben en las etiquetas html, despues entran los estilos que se apliquen a los id(#), luego a las clases(.)y por ultimo a los selectores como etiquetas html
 
 3. Orden en las fuentes. es la forma en la que se mandan a llamar los estilos  siempre se enpezara de la primera linea hasta abajo
+
+utilizar tantos id no es buena practica lo mejor es utilizar las clases y los selectores que ya conocemos, debemos quitar los id y remplazarlos por las clasesporque esto nos puede ocasionar muchos problemas despues, se llama la clase de forma directa y se ignora el id  antes #main-nav   ahora .nav ej:  #main-nav li    .nav li
+
+## Los combinadores
+permiten crear combinaciones multiples de selectores y crear una payor specificidad entre los cuales hay 4
+
+1. hermano adyacente o cercanos: se separa por el signo + (div + p {... }) estiliza todas las p cercanas al div ej:
+   ``` 
+        h2 + p {
+            color: red
+        }
+        <div>
+            <h2>Soy un titulo</h2>
+            <p>soy un parrafo</p>
+            <h2>Soy otro titulo</h2>
+            <p>soy otro parrafo</p>
+            <h3>Soy sub titulo</h3>
+            <p>soy un parrafo</p>        
+        </div>
+    solo estilizara la etiqueta p que esten cerca al h2
+2. hermanno general: nos permite estilizar todas las etiquetas hernamo  se separa por el signo ~ (div ~ p {... }) ej:
+    ``` 
+        h2 ~ p {
+            color: yellow
+        }
+        <div>
+            <h2>Soy un titulo</h2>
+            <p>soy un parrafo</p>
+            <h2>Soy otro titulo</h2>
+            <h3>Soy sub titulo</h3>
+            <p>soy un parrafo</p>        
+        </div>
+    estilizara todas las etiquetas p debido a que son hermanos
+3. hijos: agrega los estilos a los hijos directos se separa por el signo > (div > p {... }) ej:
+    ``` 
+        div > p {
+            color: yellow
+        }
+        <div>
+            <article>
+                <p>soy un parrafo</p>
+            </article>
+            <article>
+                <p>soy un parrafo</p>
+            </article>    
+            <section>
+                <div>
+                    <p>soy un parrafo</p>
+                </div>
+            </section>  
+            <p>soy un parrafo</p>    
+        </div>
+    estilizara solo la tercera y cuarta etiquetas p debido a que son hijas directas del div
+4. descendiente: todas las etiquetas que eten dentro de un contenedor (div p { }) ej
+    ``` 
+        div > p {
+            color: blue
+        }
+        <div>
+            <article>
+                <p>soy un parrafo</p>
+            </article>
+            <article>
+                <p>soy un parrafo</p>
+            </article>    
+            <section>
+                <div>
+                    <p>soy un parrafo</p>
+                </div>
+            </section>  
+            <p>soy un parrafo</p>    
+        </div>
+     estilizara todas las etiquetas p debido a que son hijos de la etiqueta div
