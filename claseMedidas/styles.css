@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* html {
+    font-size: 62,5%;
+}  dejando la etiqueta html en esa medida podemos calcular que 1 rem = 10px y podemos hacer los calculos mas facil */
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color:aqua;
+}
+h1{
+    font-size: 2rem;
+}
+section{
+    width: 80%;
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color:blue
+}
+p{
+    font-size: 18px;
+}

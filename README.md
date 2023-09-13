@@ -205,3 +205,10 @@ permiten crear combinaciones multiples de selectores y crear una payor specifici
             <p>soy un parrafo</p>    
         </div>
      estilizara todas las etiquetas p debido a que son hijos de la etiqueta global div
+
+## ***Medidas***
+hay dos parametros las cuales son medidas relativas y medidas absoluta
+ 1. **medidas absolutas** utilizamos pixeles vamos a poner el tamaño del  fuente utilizamos el width, el heigth y esta medida no va a cambiar sin importar el tamaño de la pantalla donde estemos viendo el proyecto
+ 2. **medidas relativa**  el tamaño varia mucho dependiendo el dispositivo en donde se este viendo y no solo se usa el porcentaje tambien se utiliza el em que es (elemento), el rem (root en elemento), max-width / max-height, min-width / min-height, vw (viewport width) vh (viewport height) 
+   el vw y vh aayuda a darle ciertas dimensiones a contenedores padres 
+   
