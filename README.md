@@ -219,3 +219,11 @@ hay dos parametros las cuales son medidas relativas y medidas absoluta
 es la forma en que posicionamos las etiquetas, las cajaas y los contenedores tenemos diferntes position static, absolute, relative, fixed, sticky
 - static. es la que viene por defecto en las etiquetas y se queda en donde se pone por esocuando se hace scroll no se mueve
 - absolute 
+
+## ***Display***
+nos ayuda a posisionar mas facil nuestros contenedores tenemos tres valores block, inline, inline-block
+**block** va a utilizar el 100% del espacio que tenga adelante sin importar si el contenido tiene o no espacio y se le puede agregar margin en las 4 posiciones ademas se le puede agregar padding en las 4 posiciones tambien
+
+**inline** va a utilizar el espacio que tenga su contenido y si queda espacio adelante va a permitir que otras etiquetas o mas contenido se ponga adelante de este en el inline no se puede utilizar el margin ni el padding en la aprte de arriba y abajo y tampoco se le puede dar un width ni un heigth
+
+**inline-block** hace que ocupe el 100% del tamaño del contenido y permite que otros hermanos se situen en frente de ellos en forma horizontal si no hay espacio entonces lo baja ademas permite agregarle el margin y el padding, ademas permite ponerle el width y el height
