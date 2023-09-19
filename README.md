@@ -210,5 +210,12 @@ permiten crear combinaciones multiples de selectores y crear una payor specifici
 hay dos parametros las cuales son medidas relativas y medidas absoluta
  1. **medidas absolutas** utilizamos pixeles vamos a poner el tamaño del  fuente utilizamos el width, el heigth y esta medida no va a cambiar sin importar el tamaño de la pantalla donde estemos viendo el proyecto
  2. **medidas relativa**  el tamaño varia mucho dependiendo el dispositivo en donde se este viendo y no solo se usa el porcentaje tambien se utiliza el em que es (elemento), el rem (root en elemento), max-width / max-height, min-width / min-height, vw (viewport width) vh (viewport height) 
-   el vw y vh aayuda a darle ciertas dimensiones a contenedores padres 
-   
+   **el em** depende de la dimension marcada delpadre directo que puede se diferente
+   **el rem** se utiliza como si fueran pixeles 1rem = 16px y siempre va ha hacer referencia a la etiqueta root del proyecto
+   **el vw y vh** ayuda a darle ciertas dimensiones a contenedores padres 
+   **max-width / max-height, min-width / min-height** delimita el crecimiento del contenedor ayuda mucho para cuando el texto se salga del contenedor **(overflow)** 
+
+## ***Position***
+es la forma en que posicionamos las etiquetas, las cajaas y los contenedores tenemos diferntes position static, absolute, relative, fixed, sticky
+- static. es la que viene por defecto en las etiquetas y se queda en donde se pone por esocuando se hace scroll no se mueve
+- absolute 
