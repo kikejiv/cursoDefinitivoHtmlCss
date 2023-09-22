@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+.header-nav {
+    display: inline-block;
+    width: 100%;
+    margin: 10px;
+    background-color:rgb(153, 228, 230);
+    border: 1px solid black;
+    margin: 0;
+}
+.logo {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+.nav {
+    position: relative;
+    list-style: none;
+    text-align: right;
+    margin-bottom: 0;
+   
+}
+.nav li {
+    display: inline; 
+    margin: 10px 0;
+    padding-left: 5px;
+    padding-right: 5px; 
+    cursor: pointer;
+   
+}
+a {
+    color: #fff;
+    text-decoration: none;
+} 
+.descripcion {
+    position: relative;
+    justify-content:center;
+    float: right;
+    background-color:rgba(42, 28, 245, 0.836);
+    border: 1px solid black;
+    width: 75%;
+    height: 440px;
+    margin: 0 auto; 
+}
+.descripcion img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+    padding: 10px;
+    margin: auto; 
+}
+.descripcion h3 {
+    text-align: center;
+    color:floralwhite
+}
+.recuadros {
+    position: relative;
+    background-color:rgb(153, 228, 230);
+    border: 5px solid rgb(80, 80, 90);
+    width: 25%;
+    height: 110px;   
+}
+.recuadros img {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 80px;
+    height: 70px;
+    margin: 0 auto;
+}
+.zoom {
+    transition: transform .2s;
+}
+.zoom:hover {
+    transform: scale(2.0);
+    cursor: pointer;
+    
+}
+.recuadros p {
+    font-size: 14px;
+    position: a;
+    align-items: center;
+    text-align: center;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 80, 90);
+    border: 1px solid rgb(12, 11, 11);
+    height: 40px;
+}
+.social-icons {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+  
+}
