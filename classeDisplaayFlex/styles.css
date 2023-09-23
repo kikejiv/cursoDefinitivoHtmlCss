@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%
+}
+body {
+    font-size: 1rem;
+}
+.container {
+    border: 0.3rem solid black;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+.box {
+    width: 10rem;
+    height: 10rem
+}
+.box1 {
+    background-color: rgb(255, 75, 47);
+}
+.box2 {
+    background-color: rgb(235, 239, 38) ;
+}
+.box3 {
+    background-color: rgb(17, 234, 86) ;
+}
+.box4 {
+    background-color: rgb(21, 243, 228) ;
+}
+.box5 {
+    background-color: rgb(30, 76, 213) ;
+}
+.box6 {
+    background-color: rgb(216, 39, 189) ;
+}

@@ -227,3 +227,5 @@ nos ayuda a posisionar mas facil nuestros contenedores tenemos tres valores bloc
 **inline** va a utilizar el espacio que tenga su contenido y si queda espacio adelante va a permitir que otras etiquetas o mas contenido se ponga adelante de este en el inline no se puede utilizar el margin ni el padding en la aprte de arriba y abajo y tampoco se le puede dar un width ni un heigth
 
 **inline-block** hace que ocupe el 100% del tamaño del contenido y permite que otros hermanos se situen en frente de ellos en forma horizontal si no hay espacio entonces lo baja ademas permite agregarle el margin y el padding, ademas permite ponerle el width y el height
+
+**Flex** ayuda a posicionar los elementos dentro del contenedor flex-wrap: wrap me ayuda  reacomodar el contenido segun el tamaño de la pantalla justify-content ayuda a aliniear el contenido de forma horizontal
