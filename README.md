@@ -240,3 +240,9 @@ nos permite guardar un valor para reutilizarlo para diferentes cosas evita repet
 ![ejemplo](./images/variables%20en%20css.JPG)
 
 ## ***Font y Web Font***
+generalmente existen fuentes genericas que ya vienen programadas en la computadora y el navegador ya las trae settiadas y siempre se van a ver cuando se abre una pagina
+
+![Fuentes genericas](./images/fuentes.JPG)
+
+existen diferentes paginas que tienen difernetes fuentes entre ella google fonts y se pueden descargar, se puede seleccionar los tipos de formatos de esa fuente y puede ser mas de uno esto hablando del grosor luego de seleccionarla se ponen dentro del header en el html  (link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet") y en el css se abre la etiqueta html{ font-family: 'Roboto', sans-serif;}
+como buenas practicas se deben cargar solo 1 fuente por proyecto, ademas importarlas siempre desde el head en html
