@@ -228,4 +228,15 @@ nos ayuda a posisionar mas facil nuestros contenedores tenemos tres valores bloc
 
 **inline-block** hace que ocupe el 100% del tamaño del contenido y permite que otros hermanos se situen en frente de ellos en forma horizontal si no hay espacio entonces lo baja ademas permite agregarle el margin y el padding, ademas permite ponerle el width y el height
 
-**Flex** ayuda a posicionar los elementos dentro del contenedor flex-wrap: wrap me ayuda  reacomodar el contenido segun el tamaño de la pantalla justify-content ayuda a aliniear el contenido de forma horizontal
+**Flex** ayuda a posicionar los elementos dentro del contenedor (display: flex) se le pone al padre y con eso hace que los hijos sean flexible (flex-direccion: column) nos permitira ponerlos en posisision de columna la propiedad reverse invierte la posicion (flex-wrap: wrap) me ayuda  reacomodar el contenido segun el tamaño de la pantalla ***justify-content*** ayuda a aliniear el contenido de forma horizontal  (justify-content: space-around) ayuda a que los contenedores tenga un espacio entre ellos para que el espacio sea el mismo se utiliza el valor space-evenly 
+***align-items*** estas propiedades ayudan a posicionar los contenedores de manera vertical (align-items: center) centra el contenido (align-items: flex-end) me posiciona el contenido en la parte de abajo
+(align-items: stretch) hace que los contenedores crescan  del tamaño del contenedor padre (align-items: baseline) toma el espacio del contenido. la propiedad ***order*** nos ayuda a modificar el orden de los contenedores independientemente de como los tengamos nombrados y si no le ponemos esta propiedad automaticamente enviara los contenedores a la izquierda
+***flex-grow*** sirve para el contenido crezca, rellena el espacio en blanco que queda para ocupar el 100% del width
+***flex-basis*** (flex-basis: 10rem) sirve para cuando no haya tanto espacio se empiezan a bajar los contenedores hasta quedar solo una columna, ayuda mucho cuando se inicia en response desing
+
+## ***Variables***
+nos permite guardar un valor para reutilizarlo para diferentes cosas evita repetir mucho codigo, para iniciar a crea la variable  las creamos en el root al iniciar el archivo css el root hace referencia al html que es como el punto de partida de nuestro elemento para crear las variables debemos anteponer en el nombre -- para utilizarla ponemos la palabra var() y dentro del parentesis el nombre de como la cree en la parte de arriba ej 
+
+![ejemplo](./images/variables%20en%20css.JPG)
+
+## ***Font y Web Font***
